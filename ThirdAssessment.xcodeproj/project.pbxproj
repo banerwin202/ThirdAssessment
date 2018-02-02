@@ -10,13 +10,15 @@
 		AAE4422A2024088C00298CCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE442292024088C00298CCE /* AppDelegate.swift */; };
 		AAE4422C2024088C00298CCE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE4422B2024088C00298CCE /* ViewController.swift */; };
 		AAE4422F2024088C00298CCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAE4422D2024088C00298CCE /* Main.storyboard */; };
-		AAE442322024088C00298CCE /* ThirdAssessment___Er_Win.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AAE442302024088C00298CCE /* ThirdAssessment___Er_Win.xcdatamodeld */; };
+		AAE442322024088C00298CCE /* ThirdAssessment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AAE442302024088C00298CCE /* ThirdAssessment.xcdatamodeld */; };
 		AAE442342024088C00298CCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAE442332024088C00298CCE /* Assets.xcassets */; };
 		AAE442372024088C00298CCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAE442352024088C00298CCE /* LaunchScreen.storyboard */; };
+		AAE4423F20240B8C00298CCE /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE4423E20240B8C00298CCE /* DataController.swift */; };
+		AAE4424120240D9100298CCE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AAE4424020240D9100298CCE /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AAE442262024088C00298CCE /* ThirdAssessment - Er Win.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ThirdAssessment - Er Win.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAE442262024088C00298CCE /* ThirdAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThirdAssessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAE442292024088C00298CCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAE4422B2024088C00298CCE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AAE4422E2024088C00298CCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		AAE442332024088C00298CCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAE442362024088C00298CCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AAE442382024088C00298CCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAE4423E20240B8C00298CCE /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		AAE4424020240D9100298CCE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +44,8 @@
 		AAE4421D2024088C00298CCE = {
 			isa = PBXGroup;
 			children = (
-				AAE442282024088C00298CCE /* ThirdAssessment - Er Win */,
+				AAE4424020240D9100298CCE /* Default-568h@2x.png */,
+				AAE442282024088C00298CCE /* ThirdAssessment */,
 				AAE442272024088C00298CCE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,31 +53,32 @@
 		AAE442272024088C00298CCE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AAE442262024088C00298CCE /* ThirdAssessment - Er Win.app */,
+				AAE442262024088C00298CCE /* ThirdAssessment.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AAE442282024088C00298CCE /* ThirdAssessment - Er Win */ = {
+		AAE442282024088C00298CCE /* ThirdAssessment */ = {
 			isa = PBXGroup;
 			children = (
 				AAE442292024088C00298CCE /* AppDelegate.swift */,
+				AAE4423E20240B8C00298CCE /* DataController.swift */,
 				AAE4422B2024088C00298CCE /* ViewController.swift */,
 				AAE4422D2024088C00298CCE /* Main.storyboard */,
 				AAE442332024088C00298CCE /* Assets.xcassets */,
 				AAE442352024088C00298CCE /* LaunchScreen.storyboard */,
 				AAE442382024088C00298CCE /* Info.plist */,
-				AAE442302024088C00298CCE /* ThirdAssessment___Er_Win.xcdatamodeld */,
+				AAE442302024088C00298CCE /* ThirdAssessment.xcdatamodeld */,
 			);
-			path = "ThirdAssessment - Er Win";
+			path = ThirdAssessment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AAE442252024088C00298CCE /* ThirdAssessment - Er Win */ = {
+		AAE442252024088C00298CCE /* ThirdAssessment */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AAE4423B2024088C00298CCE /* Build configuration list for PBXNativeTarget "ThirdAssessment - Er Win" */;
+			buildConfigurationList = AAE4423B2024088C00298CCE /* Build configuration list for PBXNativeTarget "ThirdAssessment" */;
 			buildPhases = (
 				AAE442222024088C00298CCE /* Sources */,
 				AAE442232024088C00298CCE /* Frameworks */,
@@ -82,9 +88,9 @@
 			);
 			dependencies = (
 			);
-			name = "ThirdAssessment - Er Win";
+			name = ThirdAssessment;
 			productName = "ThirdAssessment - Er Win";
-			productReference = AAE442262024088C00298CCE /* ThirdAssessment - Er Win.app */;
+			productReference = AAE442262024088C00298CCE /* ThirdAssessment.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -103,7 +109,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AAE442212024088C00298CCE /* Build configuration list for PBXProject "ThirdAssessment - Er Win" */;
+			buildConfigurationList = AAE442212024088C00298CCE /* Build configuration list for PBXProject "ThirdAssessment" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -116,7 +122,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AAE442252024088C00298CCE /* ThirdAssessment - Er Win */,
+				AAE442252024088C00298CCE /* ThirdAssessment */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +133,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAE442372024088C00298CCE /* LaunchScreen.storyboard in Resources */,
+				AAE4424120240D9100298CCE /* Default-568h@2x.png in Resources */,
 				AAE442342024088C00298CCE /* Assets.xcassets in Resources */,
 				AAE4422F2024088C00298CCE /* Main.storyboard in Resources */,
 			);
@@ -140,8 +147,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAE4422C2024088C00298CCE /* ViewController.swift in Sources */,
+				AAE4423F20240B8C00298CCE /* DataController.swift in Sources */,
 				AAE4422A2024088C00298CCE /* AppDelegate.swift in Sources */,
-				AAE442322024088C00298CCE /* ThirdAssessment___Er_Win.xcdatamodeld in Sources */,
+				AAE442322024088C00298CCE /* ThirdAssessment.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,7 +313,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AAE442212024088C00298CCE /* Build configuration list for PBXProject "ThirdAssessment - Er Win" */ = {
+		AAE442212024088C00298CCE /* Build configuration list for PBXProject "ThirdAssessment" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AAE442392024088C00298CCE /* Debug */,
@@ -314,7 +322,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AAE4423B2024088C00298CCE /* Build configuration list for PBXNativeTarget "ThirdAssessment - Er Win" */ = {
+		AAE4423B2024088C00298CCE /* Build configuration list for PBXNativeTarget "ThirdAssessment" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AAE4423C2024088C00298CCE /* Debug */,
@@ -326,13 +334,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		AAE442302024088C00298CCE /* ThirdAssessment___Er_Win.xcdatamodeld */ = {
+		AAE442302024088C00298CCE /* ThirdAssessment.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				AAE442312024088C00298CCE /* ThirdAssessment___Er_Win.xcdatamodel */,
 			);
 			currentVersion = AAE442312024088C00298CCE /* ThirdAssessment___Er_Win.xcdatamodel */;
-			path = "ThirdAssessment___Er_Win.xcdatamodeld";
+			path = ThirdAssessment.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
