@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="16G1212" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Property" representedClassName="Property" syncable="YES" codeGenerationType="class">
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="hasOwner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PropertyOwners" inverseName="hasProperty" inverseEntity="PropertyOwners" syncable="YES"/>
+    </entity>
     <entity name="PropertyOwners" representedClassName="PropertyOwners" syncable="YES" codeGenerationType="class">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="hasProperty" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Property" inverseName="hasOwner" inverseEntity="Property" syncable="YES"/>
     </entity>
     <elements>
-        <element name="PropertyOwners" positionX="-54" positionY="-9" width="128" height="60"/>
+        <element name="Property" positionX="-36" positionY="18" width="128" height="105"/>
+        <element name="PropertyOwners" positionX="-234" positionY="-27" width="128" height="75"/>
     </elements>
 </model>

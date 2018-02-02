@@ -22,14 +22,31 @@ class OwnersTableViewController: UIViewController {
         super.viewDidLoad()
      
         tableView.dataSource = self
-//        tableView.delegate = self
-        
-        loadOwners()
+        tableView.delegate = self
+      
         fetchOwners()
         
-        
-        
     }
+        
+        override func viewWillAppear(_ animated: Bool) {
+            super.viewWillAppear(animated)
+            
+            if UserDefaults.standard.bool(forKey: "FirstRun") {
+            fetchOwners()
+            print("Owner Load")
+            
+            } else {
+                print("Load from Data")
+                loadOwners()
+                fetchOwners()
+                UserDefaults.standard.set(true, forKey: "FirstRun")
+            }
+        
+        
+        }
+        
+        
+
     
     func loadOwners() {
         let ownerArray = ["Sam", "Josh", "Gareth", "Newt", "Thomas", "Abu", "Dave", "Melvin", "Nicholas","Alice"]
@@ -84,6 +101,20 @@ extension OwnersTableViewController : UITableViewDataSource {
         return cell
     }
     
+}
+
+extension OwnersTableViewController : UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let sb = UIStoryboard(name: "Main", bundle: Bundle.main)
+        if let vc = sb.instantiateViewController(withIdentifier: "PropertiesTableViewController") as? PropertiesTableViewController {
+            
+            vc.selectedOwner = fetchResultController.object(at: indexPath)
+            
+            navigationController?.pushViewController(vc, animated: true)
+            
+         
+        }
+    }
 }
 
 extension OwnersTableViewController : NSFetchedResultsControllerDelegate {

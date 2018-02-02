@@ -17,6 +17,9 @@
 		AAE442432024114700298CCE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AAE442422024114700298CCE /* Default-568h@2x.png */; };
 		AAE4424420241B1B00298CCE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAE442382024088C00298CCE /* Info.plist */; };
 		AAE4424520241B5200298CCE /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = AAE442382024088C00298CCE /* Info.plist */; };
+		AAE44247202441AC00298CCE /* PropertiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE44246202441AC00298CCE /* PropertiesTableViewController.swift */; };
+		AAE4424920244DCB00298CCE /* PropertyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE4424820244DCB00298CCE /* PropertyTableViewCell.swift */; };
+		AAE4424B2024516B00298CCE /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE4424A2024516B00298CCE /* AddViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		AAE442382024088C00298CCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAE4423E20240B8C00298CCE /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		AAE442422024114700298CCE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		AAE44246202441AC00298CCE /* PropertiesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesTableViewController.swift; sourceTree = "<group>"; };
+		AAE4424820244DCB00298CCE /* PropertyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyTableViewCell.swift; sourceTree = "<group>"; };
+		AAE4424A2024516B00298CCE /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,9 @@
 				AAE442292024088C00298CCE /* AppDelegate.swift */,
 				AAE4423E20240B8C00298CCE /* DataController.swift */,
 				AAE4422B2024088C00298CCE /* OwnersTableViewController.swift */,
+				AAE44246202441AC00298CCE /* PropertiesTableViewController.swift */,
+				AAE4424A2024516B00298CCE /* AddViewController.swift */,
+				AAE4424820244DCB00298CCE /* PropertyTableViewCell.swift */,
 				AAE4422D2024088C00298CCE /* Main.storyboard */,
 				AAE442332024088C00298CCE /* Assets.xcassets */,
 				AAE442352024088C00298CCE /* LaunchScreen.storyboard */,
@@ -149,8 +158,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAE4424920244DCB00298CCE /* PropertyTableViewCell.swift in Sources */,
 				AAE4424520241B5200298CCE /* Info.plist in Sources */,
+				AAE4424B2024516B00298CCE /* AddViewController.swift in Sources */,
 				AAE4422C2024088C00298CCE /* OwnersTableViewController.swift in Sources */,
+				AAE44247202441AC00298CCE /* PropertiesTableViewController.swift in Sources */,
 				AAE4423F20240B8C00298CCE /* DataController.swift in Sources */,
 				AAE4422A2024088C00298CCE /* AppDelegate.swift in Sources */,
 				AAE442322024088C00298CCE /* ThirdAssessment.xcdatamodeld in Sources */,
