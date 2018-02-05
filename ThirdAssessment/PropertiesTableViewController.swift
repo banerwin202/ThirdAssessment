@@ -19,6 +19,9 @@ class PropertiesTableViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        guard let ownerName = selectedOwner?.name else {return}
+        navigationItem.title = "Properties of \(ownerName)"
 
         tableView.dataSource = self
         tableView.rowHeight = 100

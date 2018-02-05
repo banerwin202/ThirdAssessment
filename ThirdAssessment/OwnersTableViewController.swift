@@ -13,9 +13,37 @@ class OwnersTableViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-
+    @IBOutlet weak var colorButton: UIBarButtonItem!
+    
     
     var fetchResultController = NSFetchedResultsController<PropertyOwners>()
+    
+    @IBAction func colorButtonTapped(_ sender: Any) {
+        
+        let alertController = UIAlertController(title: "Choose Theme", message: nil, preferredStyle: .alert)
+        let blue = UIAlertAction(title: "Blue", style: .default) { (action) in
+            self.navigationController?.navigationBar.barTintColor = UIColor.blue
+            UserDefaults.standard.setValue("blue", forKey: "barColor")
+        }
+        let red = UIAlertAction(title: "Red", style: .default) { (action) in
+            self.navigationController?.navigationBar.barTintColor = UIColor.red
+            UserDefaults.standard.setValue("red", forKey: "barColor")
+        }
+        let green = UIAlertAction(title: "green", style: .default) { (action) in
+            self.navigationController?.navigationBar.barTintColor = UIColor.green
+            UserDefaults.standard.setValue("green", forKey: "barColor")
+        }
+        let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
+        alertController.addAction(blue)
+        alertController.addAction(red)
+        alertController.addAction(green)
+        alertController.addAction(cancel)
+        
+        present(alertController, animated: true, completion: nil)
+        
+        
+    }
     
     
     override func viewDidLoad() {
@@ -23,28 +51,36 @@ class OwnersTableViewController: UIViewController {
      
         tableView.dataSource = self
         tableView.delegate = self
+        
+        
+        if UserDefaults.standard.string(forKey: "barColor") == nil {
+            navigationController?.navigationBar.barTintColor = UIColor.darkGray
+        } else if UserDefaults.standard.string(forKey: "barColor") == "blue" {
+            navigationController?.navigationBar.barTintColor = UIColor.blue
+        } else if UserDefaults.standard.string(forKey: "barColor") == "red" {
+            navigationController?.navigationBar.barTintColor = UIColor.red
+        } else if UserDefaults.standard.string(forKey: "barColor") == "green" {
+            navigationController?.navigationBar.barTintColor = UIColor.green
+        }
+        
+        
       
-        fetchOwners()
-        
-    }
-        
-        override func viewWillAppear(_ animated: Bool) {
-            super.viewWillAppear(animated)
-            
-            if UserDefaults.standard.bool(forKey: "FirstRun") {
+        if UserDefaults.standard.bool(forKey: "FirstRun") {
             fetchOwners()
             print("Owner Load")
             
-            } else {
-                print("Load from Data")
-                loadOwners()
-                fetchOwners()
-                UserDefaults.standard.set(true, forKey: "FirstRun")
-            }
+        } else {
+            print("Load from Data")
+            loadOwners()
+            fetchOwners()
+            UserDefaults.standard.set(true, forKey: "FirstRun")
+        
+    }
+        
+
         
         
-        }
-        
+}
         
 
     

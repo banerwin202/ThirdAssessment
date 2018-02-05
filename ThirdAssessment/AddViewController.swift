@@ -23,6 +23,8 @@ class AddViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationItem.title = "Add Property"
+        
         let done = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(doneButtonTapped(sender:)))
         
         navigationItem.rightBarButtonItems = [done]
@@ -95,6 +97,7 @@ class AddViewController: UIViewController {
         newProperty.price = price
         newProperty.location = location
         
+        //select the specific owner to add property
         selectedOwner2?.addToHasProperty(newProperty)
         
         DataController.saveContext()
